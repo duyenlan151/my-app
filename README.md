@@ -2,14 +2,17 @@
   <img src='https://i.imgur.com/KVmyXyo.png' alt='Vital - Vite Starter Template' width='600'/>
 </p>
 
-<p align='center'>
-Mocking up web app with <b>Vital</b><sup><em>(speed)</em></sup><br>
-</p>
+<h3 align='center'>
+React + TypeScript + Tailwind: Infinite Scrolling and Searchable Product List<br>
+</h3>
 
 <br>
 
 <p align='center'>
-<a href="https://vital.josepvidal.dev">Live Demo</a>
+
+<a href="https://vital.josepvidal.dev/">Copy template from Vital @ Vite Template: </a>
+<a href="https://infinite-scrolling-and-searchable-dl.netlify.app">Live Demo</a>
+
 </p>
 
 <br>
@@ -17,7 +20,8 @@ Mocking up web app with <b>Vital</b><sup><em>(speed)</em></sup><br>
 ## Features
 
 - ⚡️ [React 18](https://beta.reactjs.org/)
-- 🦾 TypeScript, of course
+- 🚀 [React Query](https://tanstack.com/query/v3/) - Caching - optimize query
+- 🦾 TypeScript
 - 🫀 [Jest](https://jestjs.io/) - unitary testing made easy
 - 🎨 [Tailwind with JIT](https://tailwindcss.com/) - next generation utility-first CSS
 - 🪢 [CSS Modules](https://github.com/css-modules/css-modules)
@@ -41,39 +45,30 @@ Mocking up web app with <b>Vital</b><sup><em>(speed)</em></sup><br>
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/jvidalv/vital/generate).
+[Create a repo from this template on GitHub](https://github.com/duyenlan151/my-app).
 
-### Clone to local
+### Getting Started
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit jvidalv/vital my-vital-app
-cd my-vital-app
-yarn # If you don't have yarn installed, run: npm install -g yarn
+step 1: clone this repo: git clone https://github.com/duyenlan151/my-app
+#
+step 2: cd my-app
+#
+step 3: npm install or yarn install #If you using yarn, If you don't have yarn installed, run: npm install -g yarn
+#
+step 4: npm start or yarn start #if using yarn
+#
+step 5: visit local site http://localhost:3000
+
+# And, enjoy :)
 ```
 
-## Checklist
-
-When you use this template, try follow the checklist to update your info properly
-
-- [ ] Rename `name` and `author` fields in `package.json`
-- [ ] Change the author name in `LICENSE`
-- [ ] Change the title in `index.html`
-- [ ] Change the favicon in `public`
-- [ ] Modify the manifest in `public`
-- [ ] Clean up the README's
-
-And, enjoy :)
-
-## Usage
-
-### Development
-
-Just run and visit http://localhost:3000
+### Environment
 
 ```bash
-yarn start
+VITE_API_URL=
 ```
 
 ### Build
@@ -81,6 +76,8 @@ yarn start
 To build the App, run
 
 ```bash
+npm run build
+#or
 yarn build
 ```
 
@@ -97,9 +94,3 @@ Go to [Netlify](https://app.netlify.com/start) and select your repository, `OK` 
 If pre-commit hooks are not working be sure that you have installed husky: `husky install`.
 
 By default this command should be triggered after yarn/npm deps are installed.
-
-## Why
-
-I have created several React apps recently. Setting the configs up is kinda the bottleneck for me to make the ideas simply come true within a very short time.
-
-So I made this starter template for myself to create apps more easily, along with some good practices that I have learned from making those apps. Feel free to tweak it or even maintains your own forks.
