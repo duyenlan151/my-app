@@ -11,6 +11,6 @@ export const useNavigateParams = () => {
       replace: true,
       scroll: false,
     };
-    navigate(path);
+    navigate(path, { preventScrollReset: true });
   };
 };
