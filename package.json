@@ -36,8 +36,9 @@
     "yarn": ">=1.22.5"
   },
   "scripts": {
-    "start": "vite",
-    "build": "vite build",
+    "start": "vite --mode development",
+    "build:stg": "tsc && vite build --mode staging --debug",
+    "build:production": "tsc && vite build --mode production --debug",
     "test": "jest",
     "postinstall": "husky install"
   },

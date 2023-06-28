@@ -8,7 +8,6 @@ export type UseInfiniteScrollHookArgs = Pick<
   // If the list has more items to load.
   hasNextPage: boolean | undefined;
   // The callback function to execute when the 'onLoadMore' is triggered.
-  // eslint-disable-next-line no-undef
   onLoadMore: VoidFunction;
   // Flag to stop infinite scrolling. Can be used in case of an error etc too.
   disabled?: boolean;
@@ -71,6 +70,7 @@ export function useInfiniteScroll({
     const observer = new IntersectionObserver(listener, options);
     observer.observe(loaderNode);
 
+    // unsubscribe
     return () => observer.disconnect();
   }, [hasNextPage, distance]);
 
