@@ -3,7 +3,7 @@
 }
 
 .imageWrapper{
-  @apply relative flex items-center justify-center min-w-[30%] max-w-[30%] min-h-[150px] max-h-[150px];
+  @apply relative flex items-center justify-center lg:min-w-[30%] min-w-[45%] lg:max-w-[30%] max-w-[45%] min-h-[150px] max-h-[150px];
 }
 
 .image {

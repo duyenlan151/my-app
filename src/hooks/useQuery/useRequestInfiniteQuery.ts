@@ -37,6 +37,7 @@ export function useRequestInfiniteQuery<TData = unknown, TError = unknown>(
 
       return undefined;
     },
+    refetchOnWindowFocus: false,
   });
 
   return {
