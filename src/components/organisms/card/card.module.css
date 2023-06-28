@@ -1,0 +1,47 @@
+.card {
+  @apply bg-white bg-opacity-10 mb-6 rounded-md shadow p-4 relative overflow-hidden h-full flex items-start min-h-[150px];
+}
+
+.imageWrapper{
+  @apply relative flex items-center justify-center min-w-[30%] max-w-[30%] min-h-[150px] max-h-[150px];
+}
+
+.image {
+  @apply absolute h-full w-full object-cover;
+}
+
+.content {
+  @apply flex flex-col h-full ml-4;
+}
+
+.title {
+  @apply text-2xl font-bold text-black text-blue-500 ;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.description {
+  @apply mt-2 text-base text-gray-300 flex-1;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.iconContainer {
+  @apply absolute right-3 bottom-3 flex items-center justify-center rounded-md opacity-10;
+}
+
+.icon {
+  @apply h-12 w-12 text-white;
+}
+
+.callToActionContainer {
+  @apply pt-6;
+}
+
+.callToActionElement {
+  @apply text-white font-bold transition tracking-wide hover:text-blue-400;
+}

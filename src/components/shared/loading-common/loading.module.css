@@ -1,0 +1,19 @@
+.loading {
+  @apply mx-auto animate-spin stroke-slate-500;
+}
+
+.loading-default {
+  @apply h-6 w-6;
+}
+
+.loading-small {
+  @apply h-4 w-4;
+}
+
+.loading-medium {
+  @apply h-10 w-10;
+}
+
+.loading-large {
+  @apply h-12 w-12;
+}
