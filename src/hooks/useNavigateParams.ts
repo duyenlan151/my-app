@@ -9,6 +9,7 @@ export const useNavigateParams = () => {
       pathname,
       search: createSearchParams(params).toString(),
       replace: true,
+      scroll: false,
     };
     navigate(path);
   };
